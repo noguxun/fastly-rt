@@ -1,0 +1,18 @@
+[package]
+name = "fastly-rt"
+version = "0.1.0"
+edition = "2021"
+authors = ["Xun Gu <noguxun@gmail.com>"]
+description = "Rust library for Fastly Real time stats API"
+keywords = ["fastly", "api", "client"]
+categories = ["api-bindings", "web-programming::http-client"]
+license = "BSD-3-Clause"
+
+[dependencies]
+anyhow = "1.0"
+reqwest = { version = "^0.11", features = ["json", "gzip", "native-tls"] }
+serde = { version = "^1.0", features = ["derive"] }
+
+[dev-dependencies]
+tokio = { version = "^1.15", features = ["macros"] }
+chrono = "^0.4"
