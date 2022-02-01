@@ -588,7 +588,6 @@ pub struct ServiceStats {
     pub waf_passed: u64,
 }
 
-
 /// Client to get service real time data
 pub struct ServiceClient {
     cli: CliObj,

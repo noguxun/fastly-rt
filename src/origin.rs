@@ -10,7 +10,7 @@ pub struct OriginResponse {
     /// Offset of entry timestamps from the current time due to processing time.
     #[serde(alias = "AggregateDelay")]
     pub aggregate_delay: u64,
-    
+
     /// A list of report entries, each representing one second of time.
     #[serde(alias = "Data")]
     pub data: Vec<OriginDataInSecond>,
